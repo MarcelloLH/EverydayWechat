@@ -16,12 +16,12 @@ auto_reply_info:
   # 自动回复消息前缀（不需要则设置为空）
   auto_reply_prefix: ''
   # 自动回复消息后缀（不需要则设置为空）
-  auto_reply_suffix: '--自动回复'
+  auto_reply_suffix: '--我的小尾巴'
 
   # 白名单，is_auto_reply_all: False 生效。此名单的用户才可自动回复。（填：文件传输助手，可回复自己，测试效果）
   auto_reply_white_list:
-    - '诗风'
-    - '文件传输助手'
+    - ''
+    - ''
 
   # 黑名单，is_auto_reply_all:True 生效。此名单不会自动回复。
   auto_reply_black_list:
@@ -70,23 +70,23 @@ alarm_info:
   girlfriend_infos:
     #女友微信昵称或者备注名，不能输入微信号。（如填：文件传输助手，发消息到文件传输助手，测试效果）
     - wechat_name:
-        - '文件传输助手'
-        - '诗风'
+        - ''
+        - ''
       # 注意：必须要把需要的群聊保存到通讯录
       group_name: # 群聊的名称
-        - '萌萌哒'
-        - '蕉群'
+        - '逗'
+        - '四个男人与三个女人'
       alarm_timed: # 定时发送的时间
-        - "13:25"
-        - "00:33"
+        - "18:00"
+        - "08:00"
       alarm_jitter: 300 # 给定时时间加一个随机抖动 300 秒。定时时间【-5，+5】分钟范围内发送。（不然每天固定在同个时间段有点尴尬）（可空）
       is_tomorrow: True # 是否发送明日信息（如天气，星座，万年历）
       #女友所在城市，用于发送天气。（可空）
-      city_name: '桂林'
+      city_name: '冰岛'
       # 此城市的 pm2.5 值。
-      air_quality_city: '桂林'
+      air_quality_city: '冰岛'
       # 格言渠道（1 : ONE●一个，2 : 词霸（每日英语，双语）3: 土味情话 4 : 一言，5：笑话，6 民国情书,7彩虹屁)(可空)
-      dictum_channel: 1
+      dictum_channel: 6
       # 从哪天开始勾搭的（可空），配合 start_date_msg 使用。
       start_date: '2017-10-10'
       # 自定义方案（可空）， {}表示用于占位，代表天数，与 start_date 一起使用。单填无意义
@@ -102,15 +102,15 @@ alarm_info:
 
     #  如果你需要另一套方案，如下面复制即可
     #  如不需要，则删除或注解下面所有的数据
-    - group_name: 'EverydayWechat 交流1群'
-      wechat_name: '贴心小秘书'
-      city_name: '漳州'
-      start_date: '2011-11-11'
-      start_date_msg: '分手后的第{}天'
-      dictum_channel: 4
-      sweet_words: '名字写在水上的人'
-      alarm_timed: "23:02"
-      is_tomorrow: True
+#     - group_name: 'EverydayWechat 交流1群'
+#       wechat_name: '贴心小秘书'
+#       city_name: '漳州'
+#       start_date: '2011-11-11'
+#       start_date_msg: '分手后的第{}天'
+#       dictum_channel: 4
+#       sweet_words: '名字写在水上的人'
+#       alarm_timed: "23:02"
+#       is_tomorrow: True
 #---------------------------------------定时提醒功能设置--------------------------------------end
 
 
@@ -122,11 +122,7 @@ group_helper_conf:
 
   # 白名单用户。当 is_all：Fase。只处理这个群里的消息
   group_name_white_list:
-    - '蕉群'
-    - '群机器人测试群'
-    - '小号测试群'
-    - 'EverydayWechat 交流1群'
-    - 'EverydayWechat 交流2群'
+    - '逗'
 
   # 黑名单用户。当 is_all ：True 。这个群里的用户不受影响。
   group_name_black_list:
@@ -140,7 +136,7 @@ group_helper_conf:
   is_rubbish: True  # 是否开启垃圾查询
   is_moviebox: True # 是否开启电影票房
   is_air_quality: True # 是否开启快递查询。
-  is_express: True # 是否开启快递查询
+  is_express: False # 是否开启快递查询
   express_info: # 快递鸟（http://www.kdniao.com/）
     app_id: '你申请的api_id'
     app_key: '你申请的app_key'
